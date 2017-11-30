@@ -1,0 +1,12 @@
+syntax = "proto3";
+import "EnumType.proto";
+
+package demo;
+option java_package = "com.bupt";
+option java_outer_classname = "InnerMessageProtos";
+
+message InnerMessage {
+    string name = 1;
+    int32 id = 2;
+    EnumType type = 3;
+}

@@ -1,0 +1,26 @@
+syntax = "proto3";
+import "InnerMessage.proto";
+package demo;
+option java_package = "com.bupt";
+option java_outer_classname = "MessageProtos";
+option optimize_for = SPEED ;  //CODE_SIZE,LITE_RUNTIME
+option java_generic_services = false;
+message Message {
+
+    string strObj = 1;
+    int32 int32Obj = 2;
+    int64 int64Obj = 3;
+    uint32 uint32Obj = 4;
+    uint64 uint64Obj = 5;
+    sint32 sint32Obj = 6;
+    sint64 sint64Obj = 7;
+    fixed32 fixed32Obj = 8;
+    fixed64 fixed64Obj = 9;
+    sfixed32 sfixed32Obj = 10;
+    sfixed64 sfixed64Obj = 11;
+    bool   boolObj = 12;
+    bytes  bytesObj = 13;
+    float folatObj = 14 [deprecated=true];
+    repeated double doubleObj = 15 [packed=true]; //
+    InnerMessage innerMessage = 16;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package demo;
+option java_package = "com.bupt";
+option java_outer_classname = "EnumTypeProtos";
+
+enum EnumType {
+    UNIVERSAL = 0;
+    WEB = 1;
+    IMAGES = 2;
+    LOCAL = 3;
+    NEWS = 4;
+    PRODUCTS = 5;
+    VIDEO = 6;
+}
